@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta name="description" content="Protfolio"/>
+	<meta name="keyword" content="HTML"/>
+	<meta name="author" content="Islington"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style type="text/css">	
+
+		.main-section{
+			font-family: 'Josefin Sans', sans-serif;
+			width: 100%;
+			margin: 40px auto 0;
+			background-color: #ededed;
+		}
+		.main-section .contact-form{
+			float: left;
+			background-color: #ededed;
+			width: 45%;
+			height: 600px;
+			margin-left: 100px;
+			text-align: center;
+		}.main-section .map{
+			float: right;
+			width: 45%;
+			height: 500px;
+			margin-top: 100px; 
+		}
+		.contact-form h2
+		{
+			font-size: 28px;
+			text-transform: capitalize;
+			color: #111;
+		}
+		.contact-form p{
+			font-size: 16px;
+			color: #111;
+		}
+		.contact-form span
+		{
+			width: 75%;
+			height: 1px;
+			display: block;
+			background: #f99104;
+			margin: 1px auto;
+		}
+		.contact-form h4
+		{	
+			font-size: 16px;
+			margin-bottom: 15px;
+			color: #111;
+		}
+		.contact-form input[type="text"]
+		{
+			padding:10px 14px 10px 10px;
+			width: 80%;
+			margin-bottom: 1px;
+			border: 1px solid #cecccc;
+			outline: none;
+			color: #555;
+		}
+		.contact-form textarea
+		{
+			width: 80%;
+			height: 120px;
+			outline: none;
+			resize: none;
+			margin-bottom: 1px;
+			border: 1px solid #cecccc;
+			padding: 8px 4px 8px 1px;
+			font-size: 16px;
+			color: #555;
+		}
+		.contact-form textarea:hover{
+			border: 1px solid #71c6c1;
+		}
+		.contact-form input[type="submit"]
+		{
+			font-size: 20px;
+			padding: 10px 10px;
+			border: none;
+			text-transform: capitalize;
+			outline: none;
+			background:#f99104;
+			color: #fff;
+			cursor: pointer;
+			width: 56%;
+			font-family: 'Josefin Sans', sans-serif;
+			border-bottom: 2px solid #a26e28;
+		}
+		.contact-form input[type="submit"]:hover
+		{
+			background:#71c6c1;
+			border-bottom: 2px solid #59928f;
+		}
+		.map{
+			width: 40%;
+			height: 400px;
+			float: right;
+		}
+	</style>
+	<!--End CSS -->
+	<script>
+		
+	</script>
+</head>
+<body>
+	<div id="cover" style="width: 100%; height: 1000px;">
+
+		<header style=" width: 100%; height: 100px;">
+			<div class="top">
+				<div class="contact-block" >
+					<a href="#">Have any question?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utsabbasyal12@gmail.com</a>
+				</div>
+			</div><!--/.content-block-->
+
+			<div class="nav-header">
+			 	<div class="photo">
+			 		<img src="../images/LOGO.png">
+			 	</div>
+				<nav>
+				<!-- navigation bar /-->
+					<table style="margin:auto;">
+						<tr class="menu">
+							<th>
+								<a href="../index.html">HOME</a>
+							</th>
+							<th>
+								<a href="CV.html">CV</a>
+							</th>
+							<th>
+								<a href="blog.html">BLOG</a>
+							</th>
+							<th>
+								<a href="research.html">RESEARCH</a>
+							</th>
+							<th>
+								<a class="active" href="contactus.html">CONTACT US</a>
+							</th>
+							
+						</tr>
+					</table>
+				</nav>
+			</div><!--/nav-header-->
+		</header><!--/End Header-->
+		
+		<!--Contact US-->
+		<div class="main-section">
+			<div class="contact-form">
+				<h2>Get in touch with us</h2>
+				<span></span><br>
+				<form name="contact-us" onsubmit="contactForm()">
+					<h4>Full Name</h4>
+					<input type="text" name="fullname" placeholder="Name" ><br><br>
+					<h4>Gender</h4>
+					<p><input type="radio"  name="gender" value="male" checked>Male&nbsp;&nbsp;
+					<input type="radio" name="gender" value="female" checked>Female</p><br>
+					<h4>Phone Number</h4>
+					<input type="text" name="phone" placeholder="+977-**********"><br><br>
+					<h4>Email address</h4>
+					<input type="text" name="email" placeholder="Example@gmail.com"><br><br>
+					<h4>Your Message</h4>
+					<textarea name="message" placeholder="Message"></textarea><br>
+					<p><input type="submit" value="Send your message"></p>
+				</form>
+				<script>
+					function contactForm(){
+						var fullname = document.forms["contact-us"]["fullname"].value;
+						var gender = document.forms["contact-us"]["gender"].value;
+						var phone = document.forms["contact-us"]["phone"].value;
+						var email = document.forms["contact-us"]["email"].value;
+						var message = document.forms["contact-us"]["message"].value;
+					
+						if(fullname =="" || phone =="" || email =="" || message ==""){
+							alert("Empty fields found. Please fill the form.");
+						}
+						else{
+							alert("Thank you for the feedback.")
+						}
+					}
+				</script>
+			</div>
+			<span></span>
+			<div class="map">
+				<a href="https://www.google.com/maps/place/Islington+College/@27.7087027,85.3237989,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb1908434cb3c5:0x1fdf1a6d41d2512d!8m2!3d27.7087027!4d85.3259876"><img src="../images/map.png"></a>
+			</div>
+		</div>
+	</div>
+	<!-- Start footer section-->
+	<footer>
+		<div class="links">
+			<table style="margin:auto;">
+						<tr class="footer-menu">
+							<th>
+								<a href="../index.html">HOME</a>
+							</th>
+							<th>
+								<a  href="CV.html">CV</a>
+							</th>
+							<th>
+								<a  href="blog.html">BLOG</a>
+							</th>
+							<th>
+								<a  href="research.html">RESEARCH</a>
+							</th>
+							<th>
+								<a class="active" href="contactus.html">CONTACT US</a>
+							</th>
+							
+						</tr>
+			</table>
+		</div>
+		<div class="copyright">
+			<p>UTSAV &copy 2020</p>
+		</div>
+	</footer>
+	<!--End footer section-->
+</body>
+</html>

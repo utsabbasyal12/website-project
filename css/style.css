@@ -1,0 +1,111 @@
+*{
+	margin: 0px auto;
+} body{
+
+	padding: 0;
+	margin:0;
+	background-image: url(../images/9.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+
+	/*--Start top section--*/ 
+}
+#cover{
+	max-height:800px;
+	width: 100%;
+
+}
+.top{
+	min-height: 40px;
+	width: 100%;
+}
+.contact-block a{
+	font:14px comic Sans MS;
+	color:white;
+	text-decoration: none;
+}
+.contact-block{
+	float: left;
+	padding: 10px 0;
+	margin-left: 50px;
+}
+.contact-block a:hover{
+	color: pink;
+}
+	/*--End top section--*/
+/*-- Start nav-header--*/
+.nav-header{
+	min-height: 60px;
+	background-color:;
+	width: 100%;
+}
+.nav-header .photo{
+	float: left;
+	overflow: hidden;
+	width: 15%;
+	margin-left: 50px;
+	
+}
+.nav-header .photo img{
+	width: 100px;
+	height: 80px;
+	float: left;
+}
+nav{
+	float: right;
+	overflow: hidden;
+
+}
+.menu a{
+	display: block;
+	font-size: 12px;
+	font-family: comic Sans MS;
+	color: white;
+	float: right;
+	text-decoration: none;
+	padding:20px;	
+	margin-top:0px;
+	margin-right: 10px;
+	border-bottom: 3px solid transparent;
+}
+.menu a:hover{
+	border-bottom: 1px solid #ededed;
+	color: orange;
+}
+.menu a.active{
+	border-bottom: 1px solid #ededed;
+	color: orange;
+}/*--footer section---*/
+footer{
+	background-color: #221d1d;
+	width: 100%;
+	height: 50px;
+
+}
+.footer-menu a{
+	display: block;
+	font-size: 8px;
+	font-family: comic Sans MS;
+	color: white;
+	float: right;
+	text-decoration: none;
+	padding:10px;	
+	margin-top:0px;
+}
+.footer-menu a:hover{
+	color: orange;
+}
+.footer-menu a.active{
+	color: orange;
+}
+.copyright{
+	text-align: center;
+}
+.copyright p{
+	color: white;
+	margin-top: -5px;
+	font-family: arial;
+	font-size: 12px;
+}
+/*--end footer section---*/
+
